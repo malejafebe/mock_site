@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* For screens that are max 728px / phones and*/
+@media (max-width: 768px) {
+
+    body {
+        background-color: blanchedalmond;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between; 
+        margin: 10px;
+        position: sticky;
+        
+    }
+
+    .navBarItems {
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: aqua;
+        width: 32%;
+        height: 30px;
+        display: flex;
+        justify-content: center;  /* this aligns horizontally when flexbox is in place */
+        align-items: center; /* this aligns vertically when flexbox is in place */
+        font-size: 18px;
+    }
+
+    article {
+        display: flex;
+        position: relative;
+        margin: 0 10px;
+        flex-direction: column;
+
+    }
+
+    .articleContent {
+        display: flex;
+        background-color: rgb(9, 82, 53);
+        padding: 10px;
+        text-align: justify;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .item-1 {
+        background-color: rgb(41, 105, 162);
+    }
+} 
+
+@media (min-width: 768px) {
+    body {
+        background-color: white;
+       /*  display: grid;
+        grid-template-rows: 2;
+        grid-template-areas:
+        "header"
+        "article"; */
+    }
+
+
+    header {
+/*         grid-area: header;
+ */    }
+
+    nav {
+        display: flex;
+        justify-content: space-between; 
+        margin: 10px;
+        position: sticky;
+    }
+
+    .navBarItems {
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(58, 143, 30);
+        width: 32%;
+        height: 50px;
+        display: flex;
+        justify-content: center;  /* this aligns horizontally when flexbox is in place */
+        align-items: center; /* this aligns vertically when flexbox is in place */
+        font-size: 20px;
+    }
+
+    article {
+        display: flex;
+        position: relative;
+        margin: 0 10px;
+        flex-direction: row;
+/*         grid-area: article;
+ */
+    }
+
+    .articleContent {
+        display: flex;
+        background-color: rgb(186, 183, 31);
+        padding: 20px;
+        text-align: justify;
+        margin: 0 5px;
+        border-radius: 10px;
+    }
+
+    .item-1 {
+        background-color: rgb(147, 14, 118);
+    }
+}
